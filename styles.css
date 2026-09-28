@@ -67,11 +67,11 @@ h1, h2, h3 { font-family: 'Lato', sans-serif; letter-spacing: -.5px; line-height
 .coin-tiny { top: 34%; left: 9%; width: 42px; height: 42px; border-width: 4px; background: var(--ink); color: var(--yellow); font-size: 18px; }
 .ticker { overflow: hidden; margin-top: 20px; background: var(--yellow); white-space: nowrap; }
 .ticker-track { display: flex; width: max-content; animation: scroll 45s linear infinite; }
-.ticker-set { display: flex; align-items: center; gap: 72px; width: max-content; padding: 16px 0; color: var(--yellow-dark); font-size: 14px; flex-shrink: 0; }
+.ticker-set { display: flex; align-items: center; gap: 72px; width: max-content; padding: 16px 72px 16px 0; color: var(--yellow-dark); font-size: 14px; flex-shrink: 0; }
 .ticker span { display: inline-flex; align-items: center; gap: 8px; }
 .ticker-logo { width: 104px; height: 52px; }
 .ticker-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.ticker-set .ticker-logo:nth-of-type(4) img { transform: scale(1.7); }
+.ticker-set .ticker-logo:nth-of-type(4) img { transform: scale(1); }
 .ticker strong { font-size: 18px; }
 @keyframes scroll { to { transform: translateX(-50%); } }
 .license-section, .news-section, .app-section { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding: 70px clamp(24px, 6vw, 100px); margin-top: 20px; border-radius: var(--radius); background: var(--paper); }
@@ -145,12 +145,14 @@ h1, h2, h3 { font-family: 'Lato', sans-serif; letter-spacing: -.5px; line-height
 .art-tag { position: absolute; right: 13%; bottom: 75px; padding: 14px 18px; border-radius: 12px; background: var(--ink); color: var(--yellow); font-size: 12px; transform: rotate(8deg); }
 .art-tag b { font-size: 19px; }
 .faq-list { padding: 0 24px; border-top: 1px solid var(--line); }
+#faq .section-heading h2 { color: #000; }
+.faq-list, .faq-list summary, .faq-list summary span, .faq-list details p { color: #000; }
 .faq-list details { border-bottom: 1px solid var(--line); }
 .faq-list summary { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 25px 0; cursor: pointer; list-style: none; font: 700 20px 'Manrope', sans-serif; }
 .faq-list summary::-webkit-details-marker { display: none; }
 .faq-list summary span { font-size: 27px; transition: transform .2s ease; }
 .faq-list details[open] summary span { transform: rotate(45deg); }
-.faq-list details p { max-width: 710px; margin: -5px 0 25px; color: var(--muted); font-size: 17px; }
+.faq-list details p { max-width: 710px; margin: -5px 0 25px; font-size: 17px; }
 .contact-section { position: relative; display: block; padding: 68px 80px; margin-top: 20px; margin-bottom: 90px; border-radius: var(--radius); background: var(--yellow); }
 .contact-copy h2 { max-width: 500px; }
 @media (min-width: 1024px) {
