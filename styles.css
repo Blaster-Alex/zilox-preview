@@ -566,7 +566,7 @@ h1, h2, h3 { font-family: 'Lato', sans-serif; letter-spacing: -.5px; line-height
     margin-bottom: 10px;
   }
   .feature-card:nth-child(n) .feature-copy p {
-    font-size: clamp(12.5px, 3.3vw, 13px);
+    font-size: clamp(13.5px, 3.55vw, 14px);
     line-height: 1.2;
     font-weight: 400;
     text-align: center;
